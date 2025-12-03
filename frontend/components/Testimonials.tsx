@@ -75,7 +75,7 @@ export default function Testimonials({ isDark }: TestimonialsProps) {
                 <img
                   src={testimonial.avatar_url}
                   alt={testimonial.name}
-                  className="w-12 h-12 rounded-full bg-gray-300"
+                  className="w-12 h-12 bg-gray-300"
                   onError={(e) => {
                     const img = e.target as HTMLImageElement;
                     img.src = 'https://via.placeholder.com/50/cccccc/666666?text=User';
