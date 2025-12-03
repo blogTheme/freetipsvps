@@ -52,7 +52,7 @@ export default function Partners({ isDark }: PartnersProps) {
               href={partner.website_url}
               target="_blank"
               rel="noopener noreferrer"
-              className={`flex items-center justify-center p-6 rounded-lg transition-all hover:shadow-lg ${
+              className={`flex items-center justify-center p-6 transition-all hover:shadow-lg ${
                 isDark ? 'bg-gray-800 border border-gray-700 hover:border-green-600' : 'bg-gray-50 border border-gray-200 hover:border-green-600'
               }`}
             >

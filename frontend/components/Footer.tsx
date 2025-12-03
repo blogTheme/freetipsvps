@@ -108,7 +108,7 @@ export default function Footer({ isDark }: FooterProps) {
                   href={config.social_media.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-full bg-gray-800 hover:bg-pink-600 flex items-center justify-center text-white transition-colors text-lg"
+                  className="w-9 h-9 bg-gray-800 hover:bg-pink-600 flex items-center justify-center text-white transition-colors text-lg"
                   title="Instagram"
                 >
                   📷
@@ -119,7 +119,7 @@ export default function Footer({ isDark }: FooterProps) {
                   href={config.social_media.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-full bg-gray-800 hover:bg-blue-600 flex items-center justify-center text-white transition-colors text-sm font-bold"
+                  className="w-9 h-9 bg-gray-800 hover:bg-blue-600 flex items-center justify-center text-white transition-colors text-sm font-bold"
                   title="Facebook"
                 >
                   f
@@ -130,7 +130,7 @@ export default function Footer({ isDark }: FooterProps) {
                   href={config.social_media.twitter}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-full bg-gray-800 hover:bg-sky-500 flex items-center justify-center text-white transition-colors text-xs font-bold"
+                  className="w-9 h-9 bg-gray-800 hover:bg-sky-500 flex items-center justify-center text-white transition-colors text-xs font-bold"
                   title="Twitter"
                 >
                   𝕏
@@ -141,7 +141,7 @@ export default function Footer({ isDark }: FooterProps) {
                   href={config.social_media.youtube}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-full bg-gray-800 hover:bg-red-600 flex items-center justify-center text-white transition-colors text-lg"
+                  className="w-9 h-9 bg-gray-800 hover:bg-red-600 flex items-center justify-center text-white transition-colors text-lg"
                   title="YouTube"
                 >
                   📺
@@ -152,7 +152,7 @@ export default function Footer({ isDark }: FooterProps) {
                   href={config.social_media.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-full bg-gray-800 hover:bg-blue-700 flex items-center justify-center text-white transition-colors text-xs font-bold"
+                  className="w-9 h-9 bg-gray-800 hover:bg-blue-700 flex items-center justify-center text-white transition-colors text-xs font-bold"
                   title="LinkedIn"
                 >
                   in

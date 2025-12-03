@@ -108,7 +108,7 @@ export default function AuctionGrid({ isDark }: AuctionGridProps) {
           {auctions.map((auction) => (
             <div
               key={auction.id}
-              className={`rounded-lg overflow-hidden shadow-lg transition-all hover:shadow-2xl hover:scale-105 cursor-pointer ${
+              className={`overflow-hidden shadow-lg transition-all hover:shadow-2xl hover:scale-105 cursor-pointer ${
                 isDark ? 'bg-gray-900 border border-gray-700' : 'bg-white border border-gray-200'
               }`}
             >
@@ -124,7 +124,7 @@ export default function AuctionGrid({ isDark }: AuctionGridProps) {
                   }}
                 />
                 {/* Status Badge */}
-                <div className={`absolute top-3 right-3 px-3 py-1 rounded-full text-sm font-semibold ${getStatusColor(auction.status)}`}>
+                <div className={`absolute top-3 right-3 px-3 py-1 text-sm font-semibold ${getStatusColor(auction.status)}`}>
                   {auction.status === 'active' ? '🔴 Aktif' : 
                    auction.status === 'sold' ? '✓ Terjual' :
                    auction.status === 'pending' ? '⏳ Proses' : '⊗ Ditutup'}
@@ -166,13 +166,13 @@ export default function AuctionGrid({ isDark }: AuctionGridProps) {
 
                 {/* Bids & Deadline */}
                 <div className="grid grid-cols-2 gap-2 mb-4 text-center text-sm">
-                  <div className={`p-2 rounded ${isDark ? 'bg-gray-800' : 'bg-gray-100'}`}>
+                  <div className={`p-2 ${isDark ? 'bg-gray-800' : 'bg-gray-100'}`}>
                     <div className="font-bold text-green-600">{auction.bids_count}</div>
                     <div className={`text-xs ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
                       Penawaran
                     </div>
                   </div>
-                  <div className={`p-2 rounded ${isDark ? 'bg-gray-800' : 'bg-gray-100'}`}>
+                  <div className={`p-2 ${isDark ? 'bg-gray-800' : 'bg-gray-100'}`}>
                     <div className={`font-bold text-sm ${isDark ? 'text-orange-400' : 'text-orange-600'}`}>
                       {new Date(auction.deadline) > new Date() ? '⏱️ Aktif' : '⊗ Selesai'}
                     </div>
@@ -180,13 +180,13 @@ export default function AuctionGrid({ isDark }: AuctionGridProps) {
                 </div>
 
                 {/* Deadline */}
-                <div className={`text-xs p-2 rounded ${isDark ? 'bg-gray-800 text-gray-300' : 'bg-gray-100 text-gray-600'}`}>
+                <div className={`text-xs p-2 ${isDark ? 'bg-gray-800 text-gray-300' : 'bg-gray-100 text-gray-600'}`}>
                   📅 {formatDate(auction.deadline)}
                 </div>
 
                 {/* Action Button */}
                 <button
-                  className="w-full mt-4 px-4 py-2 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors"
+                  className="w-full mt-4 px-4 py-2 bg-green-600 hover:bg-green-700 text-white font-bold transition-colors"
                   onClick={() => alert(`Membuka lelang: ${auction.title}`)}
                 >
                   Lihat Detail & Tawar

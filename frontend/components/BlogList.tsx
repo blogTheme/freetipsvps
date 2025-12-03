@@ -83,7 +83,7 @@ export default function PostList({ isDark }: PostListProps) {
           {posts.map((post) => (
             <div
               key={post.id}
-              className={`rounded-lg overflow-hidden shadow-lg transition-all hover:shadow-2xl hover:scale-105 cursor-pointer ${
+              className={`overflow-hidden shadow-lg transition-all hover:shadow-2xl hover:scale-105 cursor-pointer ${
                 isDark ? 'bg-gray-800 border border-gray-700' : 'bg-white border border-gray-200'
               }`}
             >
@@ -101,7 +101,7 @@ export default function PostList({ isDark }: PostListProps) {
                   />
                   {/* Category Badge */}
                   {post.category && (
-                    <div className="absolute top-3 left-3 px-3 py-1 bg-green-600 text-white text-sm font-semibold rounded-full">
+                    <div className="absolute top-3 left-3 px-3 py-1 bg-green-600 text-white text-sm font-semibold">
                       {post.category}
                     </div>
                   )}
@@ -138,7 +138,7 @@ export default function PostList({ isDark }: PostListProps) {
                     📅 {formatDate(post.created_at)}
                   </span>
                   {post.status && (
-                    <span className={`text-xs px-2 py-1 rounded-full ${
+                    <span className={`text-xs px-2 py-1 ${
                       post.status === 'published' ? 'bg-green-100 text-green-800' :
                       post.status === 'draft' ? 'bg-yellow-100 text-yellow-800' :
                       'bg-gray-100 text-gray-800'
@@ -151,7 +151,7 @@ export default function PostList({ isDark }: PostListProps) {
 
                 {/* Action Button */}
                 <button
-                  className="w-full px-4 py-2 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors"
+                  className="w-full px-4 py-2 bg-green-600 hover:bg-green-700 text-white font-bold transition-colors"
                   onClick={() => alert(`Membuka: ${post.title}`)}
                 >
                   Baca Selengkapnya

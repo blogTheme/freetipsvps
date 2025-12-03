@@ -53,7 +53,7 @@ export default function Navigation({ isDark, toggleDarkMode }: NavigationProps) 
           <div className="flex items-center gap-4">
             <button
               onClick={toggleDarkMode}
-              className={`p-2 rounded-lg transition-colors ${
+              className={`p-2 transition-colors ${
                 isDark
                   ? 'bg-gray-800 hover:bg-gray-700 text-yellow-400'
                   : 'bg-gray-100 hover:bg-gray-200 text-gray-700'
@@ -93,7 +93,7 @@ export default function Navigation({ isDark, toggleDarkMode }: NavigationProps) 
               <Link
                 key={link.label}
                 href={link.href}
-                className={`block px-4 py-2 rounded-lg transition-colors ${
+                className={`block px-4 py-2 transition-colors ${
                   isDark
                     ? 'text-gray-300 hover:bg-gray-700 hover:text-green-400'
                     : 'text-gray-700 hover:bg-white hover:text-green-600'

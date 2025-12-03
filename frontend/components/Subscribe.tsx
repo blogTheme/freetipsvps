@@ -34,7 +34,7 @@ export default function Subscribe({ isDark }: SubscribeProps) {
     >
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
-          className={`rounded-lg p-12 text-center ${
+          className={`p-12 text-center ${
             isDark
               ? 'bg-gradient-to-r from-green-900 to-green-800'
               : 'bg-gradient-to-r from-green-50 to-green-100'
@@ -56,14 +56,14 @@ export default function Subscribe({ isDark }: SubscribeProps) {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Masukkan email Anda"
               required
-              className={`flex-1 px-4 py-3 rounded-lg border-0 focus:outline-none focus:ring-2 focus:ring-green-600 ${
+              className={`flex-1 px-4 py-3 border-0 focus:outline-none focus:ring-2 focus:ring-green-600 ${
                 isDark ? 'bg-gray-700 text-white' : 'bg-white text-gray-900'
               }`}
             />
             <button
               type="submit"
               disabled={loading}
-              className="px-6 py-3 bg-green-600 hover:bg-green-700 disabled:bg-green-400 text-white font-bold rounded-lg transition-colors"
+              className="px-6 py-3 bg-green-600 hover:bg-green-700 disabled:bg-green-400 text-white font-bold transition-colors"
             >
               {loading ? '...' : 'Daftar'}
             </button>
@@ -71,7 +71,7 @@ export default function Subscribe({ isDark }: SubscribeProps) {
 
           {/* Message */}
           {message && (
-            <div className={`mt-4 p-3 rounded-lg ${
+            <div className={`mt-4 p-3 ${
               message.type === 'success'
                 ? isDark
                   ? 'bg-green-800 text-green-100'

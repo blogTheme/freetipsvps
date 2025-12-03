@@ -49,7 +49,7 @@ export default function Testimonials({ isDark }: TestimonialsProps) {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className={`p-6 rounded-lg shadow-lg ${
+              className={`p-6 shadow-lg ${
                 isDark ? 'bg-gray-900 border border-gray-700' : 'bg-white border border-gray-200'
               }`}
             >

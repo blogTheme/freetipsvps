@@ -46,13 +46,13 @@ export default function HeroSection({ isDark }: HeroProps) {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
-            className="px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-all transform hover:scale-105 shadow-lg"
+            className="px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-bold transition-all transform hover:scale-105 shadow-lg"
             onClick={() => document.getElementById('auctions')?.scrollIntoView({ behavior: 'smooth' })}
           >
             🔨 Lelang Sekarang
           </button>
           <button
-            className={`px-8 py-4 font-bold rounded-lg transition-all transform hover:scale-105 shadow-lg ${
+            className={`px-8 py-4 font-bold transition-all transform hover:scale-105 shadow-lg ${
               isDark
                 ? 'bg-gray-700 hover:bg-gray-600 text-white'
                 : 'bg-white hover:bg-gray-100 text-green-600'
